@@ -1,11 +1,10 @@
 import calendar
 import xlsxwriter
 
-from config import doctor, days
-from excel.format import text_tittle_style, image_tittle_style, tittles_style, merge_format_month_rule, \
-    merge_empty_line_rule, \
-    days_number_format_rule, days_number_bg_rule, data_title_rule, period_style
-from excel.functions import collaborator_write
+from testes_pablo.config import days, doctor
+from testes_pablo.excel.format import text_tittle_style, tittles_style, period_style, data_title_rule, \
+    merge_format_month_rule, merge_empty_line_rule, days_number_format_rule, days_number_bg_rule, image_tittle_style
+from testes_pablo.excel.functions import collaborator_write
 
 workbook = xlsxwriter.Workbook('hello.xlsx')
 worksheet1 = workbook.add_worksheet()
